@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>登陆界面</title>
+    <title>作业3</title>
+   <style>
+       h1 {text-align:center;}
+       .btn-group button {
+           background-color: dodgerblue; /* Green background */
+           border: 2px solid white; /* Green border */
+           color: white; /* White text */
+           padding: 10px 24px; /* Some padding */
+           cursor: pointer; /* Pointer/hand icon */
+           float: left; /* Float the buttons side by side */
+       }
+
+       /* Clear floats (clearfix hack) */
+       .btn-group:after {
+           content: "";
+           clear: both;
+           display: table;
+       }
+
+       .btn-group button:not(:last-child) {
+           border-right: none; /* Prevent double borders */
+       }
+
+       /* Add a background color on hover */
+       .btn-group button:hover {
+           background-color: dodgerblue;
+       }
+       table,th,td
+       {
+           border:2px solid lightblue;
+       }
+       table
+       {
+           width:100%;
+       }
+       th
+       {
+           background-color:lightskyblue;
+           color:white;
+           font-size: 150%;
+           height:70px;
+       }
+       tr
+       {
+           height:50px;
+       }
+       td
+       {
+           font-size: 120%;
+           text-align:center;
+       }
+   </style>
 </head>
 <body>
+<h1>登录界面</h1>
 <form action="loginServlet" method="post">
     <table id="mytable">
         <tr>
